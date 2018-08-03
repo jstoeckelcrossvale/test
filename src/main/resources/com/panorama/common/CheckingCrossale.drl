@@ -1,0 +1,14 @@
+package com.panorama.common;
+
+import com.panorama.common.Crossale;
+
+rule "CheckingCrossale"
+	lock-on-active true
+	ruleflow-group "crossale"
+	dialect "mvel"
+	when
+		crossale : Crossale(hasChecking == false )
+	then
+		crossale.setCheckingCrossale( true );
+end
+

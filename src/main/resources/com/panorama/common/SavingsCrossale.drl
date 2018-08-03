@@ -1,0 +1,13 @@
+package com.panorama.common;
+
+import com.panorama.common.Crossale;
+
+rule "SavingsCrossale"
+	lock-on-active true
+	ruleflow-group "crossale"
+	dialect "mvel"
+	when
+		crossale : Crossale(hasSavings == false )
+	then
+		crossale.setSavingsCrossale( true );
+end
