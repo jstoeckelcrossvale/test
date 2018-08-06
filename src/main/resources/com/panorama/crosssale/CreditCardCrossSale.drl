@@ -1,2 +1,15 @@
 package com.panorama.crosssale;
 
+import com.panorama.common.CrossSale;
+
+rule "CreditCardCrossSale"
+	lock-on-active true
+	ruleflow-group "crossSale"
+	dialect "mvel"
+	when
+		crossSale : CrossSale( creditScore > 650 , rating in ( "A", "B" ) , hasCreditCard == false )
+	then
+		crossSale.setCreditCardCrossSale( true );
+end
+
+
