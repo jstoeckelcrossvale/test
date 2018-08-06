@@ -1,6 +1,6 @@
 package com.panorama.crosssale;
 
-import com.panorama.common.CrossSale;
+import com.panorama.crosssale.CrossSale;
 
 rule "CreditCardCrossSale"
 	lock-on-active true
