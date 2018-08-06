@@ -1,2 +1,14 @@
 package com.panorama.crosssale;
 
+import com.panorama.crosssale.CrossSale;
+
+rule "SavingsCrossSale"
+	lock-on-active true
+	ruleflow-group "crossSale"
+	dialect "mvel"
+	when
+		crossSale : CrossSale(hasSavings == false )
+	then
+		crossSale.setSavingsCrossSale( true );
+end
+
