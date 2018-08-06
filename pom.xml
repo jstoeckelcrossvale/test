@@ -7,7 +7,7 @@
   <version>1.0</version>
   <packaging>kjar</packaging>
   <name>panorama</name>
-  <description>Contains all Panorama BPM processes and pbojects</description>
+  <description>Contains all Panorama BPM processes and objects</description>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
