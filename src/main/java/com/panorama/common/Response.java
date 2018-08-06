@@ -9,14 +9,14 @@ public class Response implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "errors")
+   @org.kie.api.definition.type.Label("errors")
    private java.util.List<java.lang.String> errors;
 
-   @org.kie.api.definition.type.Label(value = "status")
+   @org.kie.api.definition.type.Label("status")
    private java.lang.String status;
 
    @org.kie.api.definition.type.Label(value = "entities")
-   private java.util.List<java.lang.String> entities;
+   private java.util.List<com.panorama.common.Entity> entities;
 
    public Response()
    {
@@ -42,18 +42,19 @@ public class Response implements java.io.Serializable
       this.status = status;
    }
 
-   public java.util.List<java.lang.String> getEntities()
+   public java.util.List<com.panorama.common.Entity> getEntities()
    {
       return this.entities;
    }
 
-   public void setEntities(java.util.List<java.lang.String> entities)
+   public void setEntities(java.util.List<com.panorama.common.Entity> entities)
    {
       this.entities = entities;
    }
 
    public Response(java.util.List<java.lang.String> errors,
-         java.lang.String status, java.util.List<java.lang.String> entities)
+         java.lang.String status,
+         java.util.List<com.panorama.common.Entity> entities)
    {
       this.errors = errors;
       this.status = status;
