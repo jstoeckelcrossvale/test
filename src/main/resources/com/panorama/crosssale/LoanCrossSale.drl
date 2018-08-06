@@ -1,2 +1,13 @@
 package com.panorama.crosssale;
 
+import com.panorama.crosssale.CrossSale;
+
+rule "LoanCrossSale"
+	lock-on-active true
+	ruleflow-group "crossSale"
+	dialect "mvel"
+	when
+		crossSale : CrossSale( creditScore > 650 , rating in ( "A", "B" ) , hasLoan == false )
+	then
+		crossSale.setLoanCrossSale( true );
+end
