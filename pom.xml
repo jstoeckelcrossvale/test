@@ -45,6 +45,11 @@
       <version>7.7.0.Final-redhat-10</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-workitems-parser</artifactId>
+      <version>7.4.1.Final</version>
+    </dependency>
   </dependencies>
   <repositories>
     <repository>
