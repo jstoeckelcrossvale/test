@@ -8,6 +8,18 @@
   <packaging>kjar</packaging>
   <name>panorama</name>
   <description>Contains all Panorama BPM processes and objects</description>
+          <repositories>
+                <repository>
+                        <id>guvnor-m2-repo</id>
+                        <name>Guvnor M2 Repo</name>
+                        <url>http://localhost:8080/business-central/maven2/</url>
+                </repository>
+                <repository>
+                        <id>JBoss repository</id>
+                        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+                </repository>
+        </repositories>
+
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
