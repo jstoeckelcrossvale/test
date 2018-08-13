@@ -21,13 +21,6 @@
 	</repositories>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.kie/kie-api -->
-		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-api</artifactId>
-			<version>7.5.0.Final</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.jbpm</groupId>
 			<artifactId>jbpm-workitems-parser</artifactId>
@@ -35,14 +28,14 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.kie</groupId>
-				<artifactId>kie-maven-plugin</artifactId>
-				<version>7.5.0.Final</version>
-				<extensions>true</extensions>
-			</plugin>
-		</plugins>
-	</build>
+   <build>
+     <plugins>
+       <plugin>
+         <groupId>org.kie</groupId>
+         <artifactId>kie-maven-plugin</artifactId>
+         <version>6.5.0.Final-redhat-19</version>
+         <extensions>true</extensions>
+       </plugin>
+     </plugins>
+   </build>
 </project>
