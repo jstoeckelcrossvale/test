@@ -55,6 +55,11 @@
       <version>7.4.1.Final</version>
     </dependency>
     <dependency>
+      <groupId>com.sun.codemodel</groupId>
+      <artifactId>codemodel</artifactId>
+      <version>2.6.0.redhat-3</version>
+    </dependency>
+    <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
       <version>7.7.0.Final-redhat-10</version>
