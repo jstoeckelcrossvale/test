@@ -18,6 +18,10 @@
                         <id>JBoss repository</id>
                         <url>http://repository.jboss.org/nexus/content/groups/public/</url>
                 </repository>
+                <repository>
+                    <id>Red Hat GA</id>
+                    <url>https://maven.repository.redhat.com/ga/</url>
+                </repository>
         </repositories>
 
   <dependencies>
