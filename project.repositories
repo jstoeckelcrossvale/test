@@ -3,16 +3,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>guvnor-m2-repo</id>
-        <url>http://localhost:8080/business-central/maven2/</url>
+        <id>Red Hat GA</id>
+        <url>https://maven.repository.redhat.com/ga/</url>
         <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>Red Hat GA</id>
-        <url>https://maven.repository.redhat.com/ga/</url>
+        <id>guvnor-m2-repo</id>
+        <url>http://localhost:8080/business-central/maven2/</url>
         <source>PROJECT</source>
       </metadata>
     </repository>
@@ -27,16 +27,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>JBoss repository</id>
-        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
+        <id>JBoss repository</id>
+        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
         <source>PROJECT</source>
       </metadata>
     </repository>

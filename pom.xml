@@ -8,22 +8,6 @@
   <packaging>kjar</packaging>
   <name>panorama</name>
   <description>Contains all Panorama BPM processes and objects</description>
-          <repositories>
-                <repository>
-                        <id>guvnor-m2-repo</id>
-                        <name>Guvnor M2 Repo</name>
-                        <url>http://localhost:8080/business-central/maven2/</url>
-                </repository>
-                <repository>
-                        <id>JBoss repository</id>
-                        <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-                </repository>
-                <repository>
-                    <id>Red Hat GA</id>
-                    <url>https://maven.repository.redhat.com/ga/</url>
-                </repository>
-        </repositories>
-
   <dependencies>
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
@@ -50,11 +34,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.jbpm</groupId>
-      <artifactId>jbpm-workitems-parser</artifactId>
-      <version>7.4.1.Final</version>
-    </dependency>
-    <dependency>
       <groupId>org.optaplanner</groupId>
       <artifactId>optaplanner-persistence-jaxb</artifactId>
       <version>7.7.0.Final-redhat-10</version>
@@ -67,6 +46,21 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  <repositories>
+    <repository>
+      <id>guvnor-m2-repo</id>
+      <name>Guvnor M2 Repo</name>
+      <url>http://localhost:8080/business-central/maven2/</url>
+    </repository>
+    <repository>
+      <id>JBoss repository</id>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>Red Hat GA</id>
+      <url>https://maven.repository.redhat.com/ga/</url>
+    </repository>
+  </repositories>
   <build>
     <plugins>
       <plugin>
