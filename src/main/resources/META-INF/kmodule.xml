@@ -1,5 +1,1 @@
-<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="MyKieBase" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="*">
-    <ksession name="MyKieSession" type="stateful" default="true" clockType="realtime"/>
-  </kbase>
-</kmodule>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
